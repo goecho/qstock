@@ -1,0 +1,42 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='qstock',
+    version='0.1.0',
+    author='Your Name',
+    author_email='your.email@example.com',
+    description='Stock analysis and backtesting toolkit',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
+    url='https://github.com/yourusername/qstock',
+    packages=find_packages(exclude=('tests', 'docs', '__pycache__')),
+    install_requires=[
+        'beautifulsoup4==4.11.1',
+        'jieba==0.42.1',
+        'jsonpath==0.82',
+        'matplotlib==3.4.2',
+        'multitasking==0.0.9',
+        'numpy==1.22.3',
+        'pandas==1.4.4',
+        'plotly==4.14.3',
+        'py_mini_racer==0.6.0',
+        'pyecharts==1.9.1',
+        'requests==2.26.0',
+        'retry==0.9.2',
+        'seaborn==0.11.0',
+        'SQLAlchemy==1.4.22',
+        'tqdm==4.62.1',
+        'func_timeout',
+        'PyExecJS'
+    ],
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Financial and Insurance Industry',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Topic :: Office/Business :: Financial :: Investment',
+    ],
+    python_requires='>=3.6',
+)
